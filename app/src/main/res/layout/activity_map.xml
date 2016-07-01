@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.developer.cloudprint.ui.MapActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tool="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name = "com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+    <ListView
+        android:id="@+id/tweetList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:id="@+id/listButton"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#99bbff"
+        android:textColor="#ffffff"
+        android:text="List"
+        android:layout_alignLeft="@+id/floatingActionsMenu"
+        android:layout_alignStart="@+id/floatingActionsMenu" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayoutButton"
+        android:background="@android:color/transparent">
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:id="@+id/leftButton"
+
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="#99bbff"
+            android:textColor="#ffffff"
+
+            android:text="Upload File"
+            android:layout_margin="10dip" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"
+            android:id="@+id/printButton"
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="#99bbff"
+            android:textColor="#ffffff"
+
+            android:text="Print Page"
+
+            android:layout_margin="10dip" />
+
+        <EditText
+            android:id="@+id/copiesId"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#ffffff"
+            android:textColor="#000000"
+            android:background="@drawable/border"
+
+            android:hint="@string/copies"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_marginLeft="25dip"
+            android:layout_marginBottom="15dip" />
+
+
+    </LinearLayout>
+
+    //Floating Action Menu Start
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fab:fab_addButtonColorNormal="#99bbff"
+        fab:fab_addButtonColorPressed="@color/color_pressed_main"
+        fab:fab_addButtonPlusIconColor="@color/plusIcon"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/color_pressed_bubble1"
+            fab:fab_title="Logout"
+            fab:fab_icon="@drawable/logout"
+            fab:fab_colorPressed="@color/color_pressed_bubble2"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            fab:fab_icon="@drawable/history"
+            fab:fab_colorNormal="@color/color_pressed_bubble1"
+            fab:fab_title="History"
+            fab:fab_colorPressed="@color/color_pressed_bubble2"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            fab:fab_icon="@drawable/payment"
+            fab:fab_colorNormal="@color/color_pressed_bubble1"
+            fab:fab_title="Payment"
+            fab:fab_colorPressed="@color/color_pressed_bubble2"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            fab:fab_icon="@drawable/profile"
+            fab:fab_colorNormal="@color/color_pressed_bubble1"
+            fab:fab_title="Profile"
+            fab:fab_colorPressed="@color/color_pressed_bubble2"/>
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    //Floating Action Menu End
+
+
+
+</RelativeLayout>

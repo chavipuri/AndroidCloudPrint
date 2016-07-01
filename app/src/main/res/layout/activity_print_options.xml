@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg1"
+    tools:context="com.example.developer.cloudprint.PrintOptions">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print Options"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="25dip"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:textSize="25dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/colorLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="Print Color : "
+            android:gravity="center"
+            android:id="@+id/colorText"
+            android:textSize="25sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dip"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Color"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Black White" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/colorLayout"
+        android:id="@+id/orientation">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="Orientation : "
+            android:gravity="center"
+            android:id="@+id/orientationText"
+            android:textSize="25sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioOrientation"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dip"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Auto"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioLandscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Landscape" />
+            <RadioButton
+                android:id="@+id/radioPortrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Portrait" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/orientation"
+        android:id="@+id/pageSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="Page Sizing : "
+            android:gravity="center"
+            android:id="@+id/pageSizing"
+            android:textSize="25sp"/>
+
+        <RadioGroup
+            android:id="@+id/radiopageSizing"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dip"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Actual size"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Fit to page" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/pageSize"
+        android:id="@+id/copiesLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="Number of Copies : "
+            android:gravity="center"
+            android:id="@+id/printsCount"
+            android:textSize="25sp"/>
+
+
+
+
+        <EditText
+            android:background="@color/whiteText"
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:textSize="20sp"
+            android:id="@+id/printsText"
+            android:hint="1"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/copiesLayout"
+        android:id="@+id/print">
+
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/copiesLayout"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="150dip"
+        android:id="@+id/printButton"
+        android:background="@drawable/roundbutton"
+        android:text="Print Page"
+        />
+
+</LinearLayout>
+</RelativeLayout>

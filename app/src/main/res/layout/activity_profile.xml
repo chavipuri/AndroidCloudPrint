@@ -1,0 +1,116 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--tools:context="com.example.developer.cloudprint.ui.Profile">-->
+
+    <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+<!--</RelativeLayout>-->
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bkg3"
+
+    tools:context="com.example.developer.cloudprint.ui.Profile" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:gravity="right|center_vertical"
+        android:padding="10px"
+        android:background="@drawable/border"
+        android:src="@drawable/profile1" />
+
+    //android:id="@+id/itemImage"
+    //android:layout_width="100dp"
+    //android:layout_height="100dp"
+   // android:layout_alignParentRight="true"
+
+
+
+
+<!--</LinearLayout>-->
+
+
+
+
+    <Button
+        android:id="@+id/btn_pick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="220dip"
+        android:width="500dip"
+        android:height="40dip"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#99bbff"
+        android:textColor="#ffffff"
+        android:text="@string/change_image"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="100dip"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="22dip"
+        android:textColor="#000"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:editable="true"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="1st"
+        android:layout_marginTop="103dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="22dip"
+        android:textColor="#000"
+        android:layout_weight="0.25"
+        android:editable="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/textView3"
+        android:text="2rd"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="22dip"
+        android:textColor="#000"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:editable="true"
+        android:text="3rd"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp" />
+
+</RelativeLayout>
